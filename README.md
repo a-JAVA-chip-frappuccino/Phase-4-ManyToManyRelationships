@@ -8,7 +8,12 @@ By the end of today's lecture, you will be able to create a three-model ORM in F
 
 0. Run `pipenv install` and `pipenv shell` to install the necessary dependencies.
 1. Set up a many-to-many DB relationship to store restaurants and foods.
+    - Why is modeling a relationship ahead of time important?
+    - What is a **join table**? Why is it necessary?
 2. Fill out the models to reflect the DB relationship. Run `flask db init` to create the database, and `flask db migrate` and `flask db upgrade` to update its schema.
+    - What is a relationship here? Is it within the schema or the models?
+    - What does `serialize_rules` do?
+    - What is **recursion**?
 
 ## Looking Ahead
 
