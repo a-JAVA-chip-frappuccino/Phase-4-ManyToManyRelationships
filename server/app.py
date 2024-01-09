@@ -17,7 +17,7 @@ def restaurants():
     return response
 
 @app.route('/foods', methods = ['GET'])
-def restaurants():
+def foods():
     foods = Food.query.all()
 
     foods_dict = [food.to_dict() for food in foods]
@@ -30,7 +30,7 @@ def restaurants():
     return response
 
 @app.route('/restaurants_foods', methods = ['GET'])
-def restaurants():
+def rfs():
     rfs = FoodAtRestaurant.query.all()
 
     rfs_dict = [rf.to_dict() for rf in rfs]
